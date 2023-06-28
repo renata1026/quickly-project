@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import Navbar from '../../components/Navbar';
-import { login } from './api/Api';
+import { login } from './api/api';
 
 function Login() {
   const [email, setEmail] = useState('');
