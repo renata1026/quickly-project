@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Logo from '../public/logo.svg';
+import LogoDark from '../public/logoDark.svg';
 import {
   AiOutlineMenu,
   AiOutlineClose,
@@ -115,17 +116,17 @@ const Navbar = () => {
           <AiOutlineFacebook size={30} className="cursor-pointer" />
           <AiOutlineTwitter size={30} className="cursor-pointer" />
         </div>
+        <Link href="/">
+          <Image
+            src={LogoDark}
+            alt="logo"
+            width={205}
+            height={75}
+            className="cursor-pointer pt-6"
+            priority
+          />
+        </Link>
       </div>
-      <Link href="/">
-        <Image
-          src={Logo}
-          alt="logo"
-          width={205}
-          height={75}
-          className="cursor-pointer pt-6"
-          priority
-        />
-      </Link>
     </nav>
   );
 };
