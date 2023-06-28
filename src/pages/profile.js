@@ -39,6 +39,7 @@ function Profile() {
         {user ? (
           <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
             <div>
+              <h1 className="text-3xl font-bold text-center mb-6">Profile</h1>
               <p>
                 <strong>First Name:</strong> {user.first_name}
               </p>

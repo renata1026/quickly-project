@@ -58,11 +58,15 @@ function Login() {
   return (
     <div>
       <Navbar />
+
       <div className="flex justify-center items-center h-screen">
         <form
           className="max-w-lg w-3/4 p-8 bg-white rounded shadow-md"
           onSubmit={handleSubmit}
         >
+          <h1 className="text-3xl font-bold text-center text-black mb-6">
+            Login
+          </h1>
           {error && <div className="text-red-500 mb-6">{error}</div>}
           <div className="mb-6">
             <label className="block text-sm font-medium text-gray-700">
