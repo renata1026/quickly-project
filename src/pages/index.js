@@ -1,22 +1,18 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import Navbar from '../../components/Navbar'
-import Link from 'next/link'
-import Login from './login'
-import Signup from './signup'
+import Header from '../../components/Header';
+import Nav from '../../components/Nav';
+import Feature from '../../components/Feature';
+import Statistic from '../../components/Statistic';
+import Footer from '../../components/Footer';
 
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home() {
+const Home = () => {
   return (
     <>
-      <Navbar />
-      <Login />
-      {/* <Link href="/signup" passHref>
-        <button className="bg-blue-500 text-white rounded-md py-2 px-4 mt-4">
-          Signup
-        </button>
-      </Link> */}
+      <Nav />
+      <Header />
+      <Statistic />
+      <Feature />
+      <Footer />
     </>
-  )
-}
+  );
+};
+export default Home;

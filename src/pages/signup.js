@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { signup } from './api/api';
 import { useRouter } from 'next/router';
-import Navbar from '../../components/Navbar';
+import Nav from '../../components/Nav';
 
 const Signup = () => {
   const router = useRouter();
@@ -106,7 +106,7 @@ const Signup = () => {
 
   return (
     <div>
-      <Navbar />
+      <Nav />
       <div className="min-h-screen flex items-center justify-center bg-gray-100">
         <div className="max-w-md w-full p-8 bg-white shadow-lg rounded-lg mt-20">
           <h1 className="text-3xl font-bold text-center mb-6">Signup</h1>

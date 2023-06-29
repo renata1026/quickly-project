@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
-import Navbar from '../../components/Navbar';
+import Nav from '../../components/Nav';
 import { login } from './api/api';
 
 function Login() {
@@ -57,7 +57,7 @@ function Login() {
 
   return (
     <div>
-      <Navbar />
+      <Nav />
 
       <div className="flex justify-center items-center h-screen">
         <form
