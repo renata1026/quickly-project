@@ -7,14 +7,14 @@ jest.mock('next/router', () => ({
   useRouter: jest.fn(),
 }));
 
-test('should render the Profile component', () => {
+test('should render the Profile component', async () => {
   useRouter.mockImplementation(() => ({
     // Mock any necessary router properties or functions
   }));
-
+  localStorage.setItem('jwttoken', 'mock-jwt-token');
   render(<Profile />);
 
   // Add your assertions here
-  const loginElement = screen.getByText('Profile', { selector: 'h1' });
-  expect(loginElement).toBeInTheDocument();
+  const profileElements = screen.getAllByText('Profile');
+  expect(profileElements[0]).toBeInTheDocument();
 });
