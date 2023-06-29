@@ -1,11 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
-import Navbar from '../../components/Navbar'
+import Nav from '../components/Nav'
 
 const UnauthorizedPage = () => {
   return (
     <div>
-      <Navbar />
+      <Nav />
 
       <div className='flex flex-col items-center justify-center h-screen'>
         <h1 className='text-6xl font-bold mb-8'>401 - Unauthorized</h1>
