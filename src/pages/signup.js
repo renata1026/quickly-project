@@ -71,8 +71,6 @@ const Signup = () => {
       return;
     }
 
-    console.log(firstName, lastName, email, password, confirmPassword);
-
     // api calling
     try {
       const userData = {
@@ -85,7 +83,6 @@ const Signup = () => {
         },
       };
       const response = await signup(userData);
-      console.log('Signup success:', response);
       setError('');
       // Redirect the user to the login page
       router.push('/login');
