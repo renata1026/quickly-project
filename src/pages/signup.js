@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import LadyOnPhone from '../assets/ladyOnPhone.png';
+import LadyOnPhone from '../assets/ladyOnPhone.jpg';
 import { signup } from '../api/api';
 import { useRouter } from 'next/router';
 import Nav from '../components/Nav';
@@ -108,9 +108,9 @@ const Signup = () => {
 
   return (
     <div>
-      <Nav />
+      <Nav class="sticky top-0" />
 
-      <div class="flex flex-wrap w-full ">
+      <div class="flex flex-wrap justify-center mx-auto overflow-hidden h-screen">
         <div className="w-full md:w-1/2">
           <Image
             src={LadyOnPhone}
@@ -131,7 +131,7 @@ const Signup = () => {
                   <p className="text-red-500 mb-4    text-center">{error}</p>
                 )}
                 <form onSubmit={handleSubmit}>
-                  <div className="mb-4">
+                  <div className="space-y-4">
                     <label className="block text-gray-700">First Name:</label>
                     <input
                       type="text"
