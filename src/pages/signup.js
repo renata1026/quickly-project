@@ -108,100 +108,113 @@ const Signup = () => {
 
   return (
     <div>
-      <Nav class="sticky top-0" />
+      <Nav />
 
-      <div class="flex flex-wrap justify-center mx-auto overflow-hidden h-screen">
-        <div className="w-full md:w-1/2">
-          <Image
-            src={LadyOnPhone}
-            alt="Lady on Phone"
-            width={500}
-            height={500}
-            className="hidden object-cover w-full h-full object-right md:block"
-          />
-        </div>
-        <div class="flex flex-col w-full md:w-1/2 h-full">
-          <div className="min-h-screen flex items-center justify-center bg-white">
-            <div className="max-w-md w-full p-8 bg-white rounded-lg mt-1">
-              <div className="p-1">
-                <h1 className="text-3xl font-bold text-center mb-1">
-                  Sign up for a free account
-                </h1>
-                {error && (
-                  <p className="text-red-500 mb-4    text-center">{error}</p>
-                )}
-                <form onSubmit={handleSubmit}>
-                  <div className="space-y-4">
-                    <label className="block text-gray-700">First Name:</label>
-                    <input
-                      type="text"
-                      className="border border-gray-300 rounded-md p-2 w-full"
-                      value={firstName}
-                      onChange={(e) => setFirstName(e.target.value)}
-                    />
-                  </div>
-                  <div className="mb-4">
-                    <label className="block text-gray-700">Last Name:</label>
-                    <input
-                      type="text"
-                      className="border border-gray-300 rounded-md p-2 w-full"
-                      value={lastName}
-                      onChange={(e) => setLastName(e.target.value)}
-                    />
-                  </div>
-                  <div className="mb-4">
-                    <label className="block text-gray-700">Email:</label>
-                    <input
-                      type="email"
-                      className="border border-gray-300 rounded-md p-2 w-full"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                    />
-                  </div>
-                  <div className="mb-4">
-                    <label className="block text-gray-700">Password:</label>
-                    <input
-                      type="password"
-                      className="border border-gray-300 rounded-md p-2 w-full"
-                      value={password}
-                      onChange={handlePasswordChange}
-                    />
-                  </div>
-                  <div className="mb-4">
-                    <label className="block text-gray-700">
-                      Confirm Password:
-                    </label>
-                    <input
-                      type="password"
-                      className="border border-gray-300 rounded-md p-2 w-full"
-                      value={confirmPassword}
-                      onChange={handleConfirmPasswordChange}
-                    />
-                  </div>
-                  <div className="mb-4">
-                    <label className="block text-gray-700">Company:</label>
-                    <input
-                      type="text"
-                      className="border border-gray-300 rounded-md p-2 w-full"
-                      value={company}
-                      onChange={(e) => setCompany(e.target.value)}
-                    />
-                  </div>
-                  <button
-                    type="submit"
-                    className="bg-[#215D6E] text-white rounded-md py-2 px-4 w-full"
-                  >
-                    Signup
-                  </button>
-                  <p>
-                    By continuing, you are creating a Quickly account and
-                    therefore you agree to Quickly's Terms of Service and
-                    Privacy Policy.
-                  </p>
-                </form>
+      <div className="flex flex-wrap w-full overflow-hidden">
+        <div className="flex flex-col w-full md:w-1/2">
+          <div className="flex justify-center pt-12 md:justify-start md:pl-12 md:-mb-24"></div>
+          <div className="flex flex-col justify-center px-8 pt-8 my-auto md:justify-start md:pt-0 md:px-24 lg:px-32">
+            <h1 className="text-3xl font-bold text-center mb-1">
+              Sign up for a free account
+            </h1>
+            {error && (
+              <p className="text-red-500 mb-4    text-center">{error}</p>
+            )}
+            <form
+              className="flex flex-col pt-3 md:pt-8"
+              onSubmit={handleSubmit}
+            >
+              <div className="space-y-4 mb-4">
+                <label className="block text-gray-900">First Name</label>
+                <input
+                  type="text"
+                  className="border border-gray-300 rounded-md p-2 w-full"
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
+                />
               </div>
-            </div>
+              <div className="space-y-4 mb-4">
+                <label className="block text-gray-900">Last Name</label>
+                <input
+                  type="text"
+                  className="border border-gray-300 rounded-md p-2 w-full"
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
+                />
+              </div>
+              <div className="space-y-2 mb-4">
+                <label className="block text-gray-900">Email</label>
+                <input
+                  type="email"
+                  className="border border-gray-300 rounded-md p-2 w-full"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </div>
+              <div className="space-y-2 mb-4">
+                <label className="block text-gray-900">Password</label>
+                <input
+                  type="password"
+                  className="border border-gray-300 rounded-md p-2 w-full"
+                  value={password}
+                  onChange={handlePasswordChange}
+                />
+              </div>
+              <div className="space-y-2 mb-4">
+                <label className="block text-gray-900">Confirm Password</label>
+                <input
+                  type="password"
+                  className="border border-gray-300 rounded-md p-2 w-full"
+                  value={confirmPassword}
+                  onChange={handleConfirmPasswordChange}
+                />
+              </div>
+              <div className="space-y-2 mb-4">
+                <label className="block text-gray-900">Company</label>
+                <input
+                  type="text"
+                  className="border border-gray-300 rounded-md p-2 w-full"
+                  value={company}
+                  onChange={(e) => setCompany(e.target.value)}
+                />
+              </div>
+              <button
+                type="submit"
+                className="bg-[#215D6E] text-white rounded-md py-2 px-4 w-full mt-4 mb-6 hover:opacity-50"
+              >
+                Signup
+              </button>
+              <p>
+                By continuing, you are creating a Quickly account and therefore
+                you agree to Quickly's Terms of Service and Privacy Policy.
+              </p>
+            </form>
           </div>
+        </div>
+        <div className="w-1/2 shadow-2xl" style={{ overflow: 'hidden' }}>
+          <div
+            style={{
+              height: '91vh',
+              maxHeight: '91vh',
+              display: 'flex',
+              alignItems: 'center',
+            }}
+          >
+            <Image
+              class="hidden object-cover w-full h-screen md:block"
+              src={LadyOnPhone}
+              alt="Lady on Phone"
+            />
+          </div>
+          <style jsx>
+            {`
+              @media (max-width: 768px) {
+                div {
+                  display: none;
+                }
+              }
+            `}
+          </style>
         </div>
       </div>
     </div>

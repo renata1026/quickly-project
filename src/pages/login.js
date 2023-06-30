@@ -91,7 +91,7 @@ function LoginCopy() {
                       type="email"
                       autoComplete="email"
                       required
-                      className="block w-full rounded-md border-0 py-4 px-6 text-gray-600 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-l sm:leading-6"
+                      className="block w-full rounded-md border-0 py-4 px-6 text-gray-600 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#398194] sm:text-l sm:leading-6"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                     />
@@ -114,7 +114,7 @@ function LoginCopy() {
                       type="password"
                       autoComplete="current-password"
                       required
-                      className="block w-full  rounded-md border-0 py-4 px-6 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-l sm:leading-6 mb-10"
+                      className="block w-full  rounded-md border-0 py-4 px-6 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#398194] sm:text-l sm:leading-6 mb-10"
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
                     />
@@ -124,7 +124,7 @@ function LoginCopy() {
                 <div>
                   <button
                     type="submit"
-                    className="flex w-full justify-center rounded-md bg-[#398194] px-6 py-4 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-[#398194] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    className="flex w-full justify-center rounded-md bg-[#398194] px-6 py-4 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-[#398194] hover:opacity-70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#398194]"
                   >
                     Log in to your account
                   </button>

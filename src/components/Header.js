@@ -24,7 +24,7 @@ const Header = () => {
               <a
                 href="/signup"
                 aria-label=""
-                className="inline-flex items-center font-semibold tracking-wider transition-colors duration-200 text-[#ff6661] hover:text-teal-accent-700"
+                className="inline-flex items-center font-semibold tracking-wider transition-colors duration-200 text-[#ff6661] hover:opacity-80"
               >
                 Learn more
                 <svg
@@ -93,7 +93,7 @@ const Header = () => {
                   <div className="mt-4 mb-2 sm:mb-4">
                     <button
                       type="submit"
-                      className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                      className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-[#ff6661] hover:opacity-80 focus:shadow-outline focus:outline-none"
                     >
                       Subscribe
                     </button>
