@@ -12,13 +12,11 @@ Node.js (version >= 12.0.0)
 NPM (version >= 6.0.0)
 
 Pages/Views
-Login
+
 The Login page provides a form for users to enter their email and password. The email input is validated to ensure it is a valid email address. Upon submission, the form makes a request to the Quickly Auth Microservice to authenticate the user.
 
-Signup
 The Signup page displays a form where users can enter their first name, last name, email, and password. The form includes email and password confirmation fields, and the form will only submit if the email and password confirmations match. Passwords are validated to ensure they have a length of 6 or more characters. Upon submission, the form sends a request to the Quickly Auth Microservice to create a new user.
 
-My Profile
 The My Profile page displays the user's information when they are logged in. If the user is not logged in (authenticated), a "401 Unauthorized" page is shown. The application stores the authentication state either in local storage or in the app store to keep track of the user's login status.
 
 Testing
