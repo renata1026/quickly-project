@@ -1,17 +1,17 @@
-# quickly-project
+# Quickly-project
 Quickly: SuperCharge Your Cash Flow!
 LIVE LINK: (https://quickly-project.netlify.app/)
 
-About
+# About
 Welcome to Quickly - Project, this is a React application that integrates with the Quickly Auth Microservice to provide authentication functionality. The app consists of three pages: Login, Signup, and My Profile. It utilizes React Router for navigation between these pages and Axios for making HTTP requests to the Quickly Auth Microservice.
 
 Quickly - Project was built by Renata Reinartz
 
-Requirements
+# Requirements
 Node.js (version >= 12.0.0)
 NPM (version >= 6.0.0)
 
-Pages/Views
+# Pages/Views
 
 The Login page provides a form for users to enter their email and password. The email input is validated to ensure it is a valid email address. Upon submission, the form makes a request to the Quickly Auth Microservice to authenticate the user.
 
@@ -19,7 +19,7 @@ The Signup page displays a form where users can enter their first name, last nam
 
 The My Profile page displays the user's information when they are logged in. If the user is not logged in (authenticated), a "401 Unauthorized" page is shown. The application stores the authentication state either in local storage or in the app store to keep track of the user's login status.
 
-Testing
+# Testing
 Unit tests have been written for each component using the Jest testing framework. These tests ensure that each component mounts without errors. 
 This application utilizes Tailwind as the chosen style framework. The components are styled using Tailwind classes and CSS. Feel free to customize the styling as per your requirements.
 
@@ -39,6 +39,16 @@ This project is licensed under the MIT License.
 
 Feel free to customize and add more information to the README file based on your specific implementation and requirements.
 
+## Screenshots
+
+
+<table>
+  <tr>
+    <td><img src="./images/home-page.png" alt="Home Page"></td>
+    <td><img src="./images/login-page.png" alt="Login Page"></td>
+    <td><img src="./images/sign-in-page.png" alt="Sign In Page"></td>
+   </tr>
+</table>
 
 
 
