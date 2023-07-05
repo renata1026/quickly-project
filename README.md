@@ -37,8 +37,6 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 License
 This project is licensed under the MIT License.
 
-Feel free to customize and add more information to the README file based on your specific implementation and requirements.
-
 ## Screenshots
 
 
